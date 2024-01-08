@@ -6,11 +6,19 @@
 
 .container {
     /* Used to keep the divs in a row.  you can use this for any size of divs */
-    float: left;
+    float: right;
     margin-bottom: 5px;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+    margin-right: 10%;
     
+}
+.containerprice{
+     /* Used to keep the divs in a row.  you can use this for any size of divs */
+     float: left;
+     margin-bottom: 5px;
+     width: 80%;
+     overflow: hidden;
 }
 
 .quartercolumn {

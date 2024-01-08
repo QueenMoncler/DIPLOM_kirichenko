@@ -9,13 +9,15 @@
         FILTER_SANITIZE_STRING);
     $model = filter_var(trim($_POST['model']),
         FILTER_SANITIZE_STRING);
+    $problem = filter_var(trim($_POST['problem']),
+        FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/home/home.html';
-    $new_url_negood = 'http://localhost/mySite/test.html';
+    $new_url_good = 'http://localhost/web/home/php/home.php';
+    $new_url_negood = 'http://localhost/test.html';
     
 
     $connection = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');
-    $query = ("INSERT INTO `priem`(`name`, `surname`, `phone`, `mark`, `model`) VALUES ('$name', '$surname', '$phone', '$mark', '$model')");
+    $query = ("INSERT INTO `priem`(`name`, `surname`, `phone`, `mark`, `model`, `problem`) VALUES ('$name', '$surname', '$phone', '$mark', '$model', '$problem')");
     
     //$results = mysql_query($query, $connection);
     $results = $connection->query($query);

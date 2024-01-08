@@ -1,0 +1,87 @@
+.rowcontainer{
+    float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	height: 110px; /* Установка высоты блока для изображения в пикселях */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+    background-color: #dce4eb;
+}
+p{
+    margin-top: 15px;
+     /* padding-top: 2.5%; */
+     text-align: center;
+     font-size: xx-large;
+     font-weight: bold;
+     color:#454545;
+     font-family: "Verdana ", sans-serif;
+}
+p.label{
+    margin-top: 15px;
+     /* padding-top: 2.5%; */
+     text-align: center;
+     font-size: xx-large;
+     font-weight: bold;
+     color:#454545;
+     font-family: "Verdana ", sans-serif;
+}
+p.price-list-label{
+    margin-top: 15px;
+    /* padding-top: 2.5%; */
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:#454545; 
+    font-family: "Verdana ", sans-serif;
+}
+p.price-list-label2{
+    margin-top: 15px;
+    /* padding-top: 2.5%; */
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color:#454545; 
+    font-family: "Verdana ", sans-serif;
+}
+a.adres{
+    display: block;
+	font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6.5%;
+    font-family: "Verdana ", sans-serif;
+    color: #454545;
+    
+}
+.testSvg{
+	width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.75%;
+}
+.button-priem{
+    background-color: white;
+    width: 20%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+   
+
+p.button-priem-label{
+    vertical-align: middle;
+    line-height: 40px; 
+     /* padding-top: 2.5%; */
+     text-align: center;
+     font-size: large;
+     font-weight: bold;
+     color:#454545;
+     font-family: "Verdana ", sans-serif;
+}
+p.button-priem-label:hover{
+    border: 1px solid #55c5e9;
+    border-radius: 50px;
+}
+

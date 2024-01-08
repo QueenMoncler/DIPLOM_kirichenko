@@ -1,0 +1,42 @@
+.mainContainer{
+    margin-left: 4.25%;
+    
+    background-color: aqua;
+}
+
+.container {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.container2 {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #d5e3f0;
+}
+
+.containerprice{
+     /* Used to keep the divs in a row.  you can use this for any size of divs */
+     float: left;
+     margin-bottom: 40px;
+     margin-top: 20px;
+     width: 100%;
+     overflow: hidden;
+     background-color: #d5e3f0;
+     padding-left: 380px;
+     padding-right: 380px;
+}
+.quartercolumn {
+    font-size: x-large;
+    width: 75%;
+    margin-left: 12.5%;
+}
+.thirdcolumn{
+    float: left; width: 33%; 
+}

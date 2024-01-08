@@ -1,0 +1,13 @@
+table, th, td{
+    border: 2px solid black;
+    font-size: xx-large;
+    
+  }
+  td{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+.tableusers{
+    margin-right: auto;
+    margin-left: auto;
+}

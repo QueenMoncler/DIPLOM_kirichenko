@@ -10,7 +10,7 @@
     $model = filter_var(trim($_POST['model']),
         FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/home/home.html';
+    $new_url_good = 'http://localhost/home/home.php';
     $new_url_negood = 'http://localhost/mySite/test.html';
     
 
