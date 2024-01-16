@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка</title>
+  <link href="../css/menu.css" rel="stylesheet" />
+  <link href="../css/textHeader.css" rel="stylesheet" />
+  <link href="../css/mypriemlist.css" rel="stylesheet" />
+  <link href="../css/label.css" rel="stylesheet" />
+  <link href="../css/containerConfig.css" rel="stylesheet" />
+  <link href="../css/buttonTop.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul class="navbar-items flexbox-col">
+      <li class="navbar-logo flexbox-left">
+        <a class="navbar-item-inner flexbox">
+          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54">
+            <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48" />
+            <polygon
+              points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91 1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28" />
+          </svg>
+        </a>
+
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../home/php/home.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <span class="link-text">Домой</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../priem/php/priem.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="folder-open-outline"></ion-icon>
+          </div>
+          <span class="link-text">Записаться</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../mypriem/php/mypriem.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="pie-chart-outline"></ion-icon>
+          </div>
+          <span class="link-text">Мои записи</span>
+    
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../price/php/price.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="pie-chart-outline"></ion-icon>
+          </div>
+          <span class="link-text">Прайс-лист</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../comment/php/comment.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+          <span class="link-text">Контакты</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../comment/php/comment.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </div>
+          <span class="link-text">Отзывы</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <span class="link-text">Settings</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <span class="link-text">
+            <?php
+            session_start();
+            $nickname =  $_SESSION["nickname"];
+            ?>
+            <?=$nickname?>
+             </span>
+        </a>
+      </li>
+     
+    </ul>
+  </nav>
+
+  <div class="mainContainer">
+    <div class="rowcontainer">
+      <div class="thirdcolumn">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://google.com" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54" class="testSvg">
+          <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48" />
+          <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91
+             1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28" />
+        </svg> -->
+        <p class="testSvg">
+          <a href="../../home/php/home.php">
+            <img src="../img/favicpng.png">
+          </a>
+        </p>
+
+      </div>
+      <div class="thirdcolumn">
+        <p class="label">
+          Автосервис<br>КИРИЧЕНКО
+        </p>
+      </div>
+      <div class="thirdcolumn">
+        <center>
+          <a href="https://rkt.mai.ru/" target="_blank" class="adres">
+            Ул.Репина 3<br>Филиал РКТ МАИ
+          </a>
+        </center>
+      </div>
+    </div>
+    <!-- Main -->
+
+
+
+    <div class="containerprice">
+
+      <nav class="nav" role="navigation">
+        <ul class="nav__list">
+          <li>
+            <input id="group-1" type="checkbox" hidden />
+            <label for="group-1" class="textPriem"><span class="fa fa-angle-right"></span>ОБЩИЕ РАБОТЫ</label>
+            <ul class="group-list">
+              <img src="../img/Общие работы.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-2" type="checkbox" hidden />
+            <label for="group-2"><span class="fa fa-angle-right"></span>ПЕРЕДНЯЯ ПОДВЕСКА</label>
+            <ul class="group-list">
+              <img src="../img/Передняя подвеска.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-3" type="checkbox" hidden />
+            <label for="group-3"><span class="fa fa-angle-right"></span>ЗАДНЯЯ ПОДВЕСКА</label>
+            <ul class="group-list">
+              <img src="../img/Задняя подвеска.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-4" type="checkbox" hidden />
+            <label for="group-4"><span class="fa fa-angle-right"></span>РУЛЕВОЕ УПРАВЛЕНИЕ</label>
+            <ul class="group-list">
+              <img src="../img/Рулевое управление.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-5" type="checkbox" hidden />
+            <label for="group-5"><span class="fa fa-angle-right"></span>ТОРМОЗНАЯ СИСТЕМА</label>
+            <ul class="group-list">
+              <img src="../img/Тормозная система.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-6" type="checkbox" hidden />
+            <label for="group-6"><span class="fa fa-angle-right"></span>ТРАНСМИССИЯ</label>
+            <ul class="group-list">
+              <img src="../img/Трансмиссия.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-7" type="checkbox" hidden />
+            <label for="group-7"><span class="fa fa-angle-right"></span>СИСТЕМА ОТОПЛЕНИЯ И ОХЛАЖДЕНИЯ</label>
+            <ul class="group-list">
+              <img src="../img/Система отопления и охлаждения.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-8" type="checkbox" hidden />
+            <label for="group-8"><span class="fa fa-angle-right"></span>ДВИГАТЕЛЬ</label>
+            <ul class="group-list">
+              <img src="../img/Двигатель.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-9" type="checkbox" hidden />
+            <label for="group-9"><span class="fa fa-angle-right"></span>ЭЛЕКТРИКА</label>
+            <ul class="group-list">
+              <img src="../img/Электрика.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-10" type="checkbox" hidden />
+            <label for="group-10"><span class="fa fa-angle-right"></span>ТОПЛИВНАЯ СИСТЕМА</label>
+            <ul class="group-list">
+              <img src="../img/Топливная система.png" alt="альтернативный текст">
+            </ul>
+          </li>
+          <li>
+            <input id="group-11" type="checkbox" hidden />
+            <label for="group-11"><span class="fa fa-angle-right"></span>КУЗОВНОЙ РЕМОНТ</label>
+            <ul class="group-list">
+              <img src="../img/Кузовной ремонт.png" alt="альтернативный текст">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <button onclick="topFunction()" class="btn-up" title="Перейти к началу"></button>
+    <script type="text/javascript" src="../js/buttonTop.js"></script>
+  </div>
+
+</body>
+
+</html>
