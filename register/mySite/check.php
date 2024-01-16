@@ -6,8 +6,8 @@
     $pass = filter_var(trim($_POST['pass']),
         FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/register/mySite/test.html';
-    $new_url_negood = 'http://localhost/web/home/php/home.php';
+    $new_url_good = '/register/mySite/test.html';
+    $new_url_negood = '/web/home/php/home.php';
     
 
     $connection = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');
@@ -26,8 +26,7 @@
             session_start();
             $_SESSION["nickname"] = $login;
             $_SESSION["name"] = $name;
-            setcookie("nickname", $login);
-            setcookie("name", $name);
+            
         }
           
                echo "Данные сохранены в сессии";

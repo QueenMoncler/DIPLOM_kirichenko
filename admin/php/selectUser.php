@@ -1,3 +1,19 @@
+<?php
+//$new_url_good = "/register/mySite/test.html";
+session_start();
+// $urlGet = '/admin/php/selectUser.php';
+
+$username = $_SESSION["nickname"];
+// setcookie('urlGet', $urlGet);
+$urlGet = $_SERVER['REQUEST_URI'];
+$_SESSION["urlGetSession"] = $urlGet;
+if ($username != "admin") {
+  header('Location: /register/mySite/php/signin.php');
+  die();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +51,7 @@
              1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28" />
         </svg> -->
         <p class="testSvg">
-          <a href="home.php">
+          <a href="../../web/home/php/home.php">
             <img src="../img/favicpng.png">
           </a>
         </p>

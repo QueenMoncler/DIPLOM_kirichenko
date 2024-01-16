@@ -12,17 +12,18 @@
     $problem = filter_var(trim($_POST['problem']),
         FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/web/home/php/home.php';
-    $new_url_negood = 'http://localhost/test.html';
+    $new_url_good = '/web/home/php/home.php';
+    $new_url_negood = 'priem.html';
     
-
+  
     $connection = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');
     $query = ("INSERT INTO `priem`(`name`, `surname`, `phone`, `mark`, `model`, `problem`) VALUES ('$name', '$surname', '$phone', '$mark', '$model', '$problem')");
     
     //$results = mysql_query($query, $connection);
     $results = $connection->query($query);
     
-    if ($results == 0) {
+    if ($results == 1) {
+       
         header('Location: '.$new_url_good);
     // there are some results, retrieve them normally (e.g. with mysql_fetch_assoc())
     } else {

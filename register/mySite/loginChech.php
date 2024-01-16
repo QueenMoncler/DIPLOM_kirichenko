@@ -4,8 +4,11 @@ $login = filter_var(trim($_POST['name']),
 $pass = filter_var(trim($_POST['pass']),
     FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/web/home/php/home.php';
-    $new_url_negood = 'http://localhost/register/mySite/test.html';
+    session_start();
+    // setcookie('url', '/register/mySite/test.html');
+    $new_url_good = $_SESSION["urlGetSession"];
+    // $new_url_good = '/web/home/php/home.php';
+    $new_url_negood = '/register/mySite/test.html';
 
 $conn = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');
 $result = $conn->query("SELECT * FROM user WHERE login = '$login' AND password = '$pass'");
@@ -17,10 +20,10 @@ if ($result == 1) {
             session_start();
             $_SESSION["nickname"] = $login;
             $_SESSION["name"] = $row['name'];
-            setcookie("nickname", $login);
-        }
+            }
     
    
+
     echo "Данные сохранены в сессии";
     header('Location: '.$new_url_good);
 

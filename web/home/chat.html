@@ -36,7 +36,7 @@
         </a>
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="mypriem.html">
+        <a class="navbar-item-inner flexbox-left" href="../../mypriem/php/mypriem.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="pie-chart-outline"></ion-icon>
           </div>
@@ -66,6 +66,20 @@
             <ion-icon name="settings-outline"></ion-icon>
           </div>
           <span class="link-text">Settings</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <span class="link-text">
+            <?php
+            session_start();
+            $nickname =  $_SESSION["nickname"];
+            ?>
+            <?=$nickname?>
+             </span>
         </a>
       </li>
     </ul>

@@ -10,8 +10,8 @@
     $model = filter_var(trim($_POST['model']),
         FILTER_SANITIZE_STRING);
 
-    $new_url_good = 'http://localhost/home/home.php';
-    $new_url_negood = 'http://localhost/mySite/test.html';
+    $new_url_good = 'home/home.php';
+    $new_url_negood = 'mySite/test.html';
     
 
     $connection = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');

@@ -1,7 +1,9 @@
 <?php
-$new_url_good = "http://localhost/register/mySite/test.html";
+$new_url_good = "/register/mySite/php/signin.php";
 session_start();
-if (!isset($_SESSION['nickname'])) {
+$urlGet = "/web/comment/php/comment.php";
+$_SESSION["urlGetSession"] = $urlGet;
+if (!isset($_SESSION["nickname"])) {
   header('Location: ' . $new_url_good);
   die();
 }
@@ -43,7 +45,7 @@ if (!isset($_SESSION['nickname'])) {
         </a>
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="../../priem/html/priem.html">
+        <a class="navbar-item-inner flexbox-left" href="../../priem/php/priem.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="folder-open-outline"></ion-icon>
           </div>
@@ -51,12 +53,19 @@ if (!isset($_SESSION['nickname'])) {
         </a>
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="../../price/html/mypriem.html">
+        <a class="navbar-item-inner flexbox-left" href="../../mypriem/php/mypriem.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="pie-chart-outline"></ion-icon>
           </div>
           <span class="link-text">Мои записи</span>
-
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../price/php/price.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="pie-chart-outline"></ion-icon>
+          </div>
+          <span class="link-text">Прайс-лист</span>
         </a>
       </li>
       <li class="navbar-item flexbox-left">
@@ -81,6 +90,20 @@ if (!isset($_SESSION['nickname'])) {
             <ion-icon name="settings-outline"></ion-icon>
           </div>
           <span class="link-text">Settings</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <span class="link-text">
+            <?php
+            session_start();
+            $nickname =  $_SESSION["nickname"];
+            ?>
+            <?=$nickname?>
+             </span>
         </a>
       </li>
     </ul>

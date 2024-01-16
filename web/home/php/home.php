@@ -35,7 +35,7 @@
   
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="../../priem/html/priem.html">
+        <a class="navbar-item-inner flexbox-left" href="../../priem/php/priem.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="folder-open-outline"></ion-icon>
           </div>
@@ -43,12 +43,21 @@
         </a>
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="../../price/html/mypriem.html">
+        <a class="navbar-item-inner flexbox-left" href="../../mypriem/php/mypriem.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="pie-chart-outline"></ion-icon>
           </div>
           <span class="link-text">Мои записи</span>
 
+        </a>
+      </li>
+     
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../price/php/price.php">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="pie-chart-outline"></ion-icon>
+          </div>
+          <span class="link-text">Прайс-лист</span>
         </a>
       </li>
       <li class="navbar-item flexbox-left">
@@ -73,6 +82,21 @@
             <ion-icon name="settings-outline"></ion-icon>
           </div>
           <span class="link-text">Settings</span>
+        </a>
+      </li>
+    
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <span class="link-text">
+            <?php
+            session_start();
+            $nickname =  $_SESSION["nickname"];
+            ?>
+            <?=$nickname?>
+             </span>
         </a>
       </li>
     </ul>
@@ -142,26 +166,26 @@
       </p>
       <center>
       <div class="fivecolumn">
-        <a href="../../price/html/mypriem.html">
+        <a href="../../price/php/price.php">
         <img src="../img/2.png" height="200px" width="200px" class="fivecolumnImage">
         </a>
       </div>
       <div class="fivecolumn">
-        <a href="../../price/html/mypriem.html">
+        <a href="../../price/php/price.php">
         <img src="../img/3.png"height="200px" width="200px">
       </div>
       <div class="fivecolumn">
-        <a href="../../price/html/mypriem.html">
+        <a href="../../price/php/price.php">
         <img src="../img/4.png"height="200px" width="200px">
       </a>
       </div>
       <div class="fivecolumn">
-        <a href="../../price/html/mypriem.html">
+        <a href="../../price/php/price.php">
         <img src="../img/5.png"height="200px" width="200px">
       </a>
       </div>
       <div class="fivecolumn">
-        <a href="../../price/html/mypriem.html">
+        <a href="../../price/php/price.php">
         <img src="../img/6.png"height="200px" width="200px">
       </a>
       </div>
@@ -169,27 +193,27 @@
       <br>
       <center>
         <div class="fivecolumn">
-          <a href="../../price/html/mypriem.html">
+          <a href="../../price/php/price.php">
           <img src="../img/7.png" height="200px" width="200px" class="fivecolumnImage">
         </a>
         </div>
         <div class="fivecolumn">
-          <a href="../../price/html/mypriem.html">
+          <a href="../../price/php/price.php">
           <img src="../img/8.png" height="200px" width="200px">
         </a>
         </div>
         <div class="fivecolumn">
-          <a href="../../price/html/mypriem.html">
+          <a href="../../price/php/price.php">
           <img src="../img/9.png" height="200px" width="200px">
         </a>
         </div>
         <div class="fivecolumn">
-          <a href="../../price/html/mypriem.html">
+          <a href="../../price/php/price.php">
           <img src="../img/10.png" height="200px" width="200px">
         </a>
         </div>
         <div class="fivecolumn">
-          <a href="../../price/html/mypriem.html">
+          <a href="../../price/php/price.php">
           <img src="../img/11.png" height="200px" width="200px">
         </a>
         </div>
@@ -201,12 +225,12 @@
         </p>
         <div class="button-priem">
           <p class="button-priem-label">
-            <a href="../../priem/html/priem.html" style="text-decoration: none; ">ЗАПИСАТЬСЯ НА РЕМОНТ</a>
+            <a href="../../priem/php/priem.php" style="text-decoration: none; ">ЗАПИСАТЬСЯ НА РЕМОНТ</a>
           </p>
         </div>
         <br><br>
     </div>
-
+   
     <div class="container2">
         <label> <center>Комментарии и отзывы</center> </label>
       <?php
