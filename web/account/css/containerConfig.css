@@ -1,0 +1,171 @@
+.mainContainer{
+    margin-left: 4.25%;
+    
+    background-color: aqua;
+}
+
+.container {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.container2 {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    --background: 210, 16%, 92%;
+}
+.container3 {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #cbd4dc;
+}
+.omestohome{
+    display: flex; justify-content: space-between; width: 50%; margin-left: auto; margin-right: auto;
+}
+.omestohome p{
+    font-size: x-large;
+}
+
+
+.quartercolumn {
+    font-size: x-large;
+    width: 75%;
+    margin-left: 12.5%;
+}
+.rowcontainer{
+    height: 180px;
+}
+.thirdcolumn{
+    float: left; width: 33%; 
+}
+.fivecolumn{
+    display: inline-block;
+    padding: 10px;
+}
+.fivecolumn img:hover{
+    border: 1px solid #55c5e9;
+}
+
+.containerComment {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.containerComment::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.containerComment img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.containerComment span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .containerComment {
+    text-align: center;
+  }
+
+  .containerComment img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.datetime{
+    text-align: right;
+}
+.cardUserMenu{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.cardUserMenu p{
+    margin-top: 40px;
+    font-weight: bolder;
+    text-align: left;
+    font-size: xx-large;
+}
+.cardUserMenu .LiInf{
+    font-size: larger;
+    color: #9398e2;
+}
+
+.cardUser{
+    background-color: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 60%;
+}
+.cardUser p{
+    font-size: large;
+   margin-bottom: 20px;
+   
+}
+.cardUserForm input{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+   
+}
+.cardUserForm select{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.input-box{
+    float: left;
+    width: 29.6%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.input-box p{
+    text-align: left;
+    font-size:medium;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+.labelCardsUser{
+
+    width: 100%;
+}
+.labelCardsUser p{
+    font-size: x-large;
+    padding-top: 30px;
+}
+
+.input-submit input{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 20%;
+}

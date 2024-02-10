@@ -1,0 +1,11 @@
+insert into price_problem(problem, priceMin, priceMax)VALUES('Общие работы', 990, 30500);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Передняя подвеска', 880, 6600);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Задняя подвеска', 880, 4840);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Рулевое управление', 880, 8800);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Тормозная система', 1400, 4400);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Трансмиссия', 1100, 14300);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Система отопления и охлаждения', 600, 10560);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Двигатель', 600, 61600);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Электрика', 440, 14800);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Топливная система', 1540, 8000);
+insert into price_problem(problem, priceMin, priceMax)VALUES('Кузовной ремонт', 2200, 17000);

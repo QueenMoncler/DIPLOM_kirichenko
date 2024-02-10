@@ -1,6 +1,6 @@
 .mainContainer{
-    margin-left: 4.25%;
-    
+    /* margin-left: 4.25%; */
+    margin-left: 80px;
     background-color: aqua;
 }
 
@@ -13,6 +13,15 @@
     
 }
 .container2 {
+    /* Used to keep the divs in a row.  you can use this for any size of divs */
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #d5e3f0;
+}
+.CCcontainer2Test {
     /* Used to keep the divs in a row.  you can use this for any size of divs */
     float: left;
     margin-top: 20px;
@@ -42,6 +51,9 @@
     font-size: x-large;
     width: 75%;
     margin-left: 12.5%;
+}
+.rowcontainer{
+    height: 180px;
 }
 .thirdcolumn{
     float: left; width: 33%; 

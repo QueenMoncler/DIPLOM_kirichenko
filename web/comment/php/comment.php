@@ -15,8 +15,10 @@ if (!isset($_SESSION["nickname"])) {
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 
-  <title>Проверка</title>
+ <title>Автосервис</title>
+  <link rel="icon" href="../../../content/img/logo.png">
   <link href="../css/menu.css" rel="stylesheet" />
   <link href="../css/label.css" rel="stylesheet" />
   <link href="../css/containerConfig.css" rel="stylesheet" />
@@ -68,14 +70,7 @@ if (!isset($_SESSION["nickname"])) {
           <span class="link-text">Прайс-лист</span>
         </a>
       </li>
-      <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left" href="../../comment/php/comment.php">
-          <div class="navbar-item-inner-icon-wrapper flexbox">
-            <ion-icon name="people-outline"></ion-icon>
-          </div>
-          <span class="link-text">Контакты</span>
-        </a>
-      </li>
+      
       <li class="navbar-item flexbox-left">
         <a class="navbar-item-inner flexbox-left" href="../../comment/php/comment.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
@@ -85,13 +80,14 @@ if (!isset($_SESSION["nickname"])) {
         </a>
       </li>
       <li class="navbar-item flexbox-left">
-        <a class="navbar-item-inner flexbox-left">
+        <a class="navbar-item-inner flexbox-left" href="../../account/php/account.php">
           <div class="navbar-item-inner-icon-wrapper flexbox">
-            <ion-icon name="settings-outline"></ion-icon>
+            <ion-icon name="chatbubbles-outline"></ion-icon>
           </div>
-          <span class="link-text">Settings</span>
+          <span class="link-text">Личный кабинет</span>
         </a>
       </li>
+      
       <li class="navbar-item flexbox-left">
         <a class="navbar-item-inner flexbox-left">
           <div class="navbar-item-inner-icon-wrapper flexbox">
@@ -112,20 +108,21 @@ if (!isset($_SESSION["nickname"])) {
     <div class="rowcontainer">
       <div class="thirdcolumn">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://google.com" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54" class="testSvg">
-            <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48" />
-            <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91
-               1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28" />
-          </svg> -->
+          <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48" />
+          <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91
+             1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28" />
+        </svg> -->
         <p class="testSvg">
-          <a href="../../home/php/home.php">
-            <img src="../img/favicpng.png">
+          <a href="/">
+            <!-- <img src="../img/favicpng.png"> -->
+            <img src="../../../content/img/logo.png"">
           </a>
         </p>
 
       </div>
       <div class="thirdcolumn">
         <p class="label">
-          Автосервис<br>КИРИЧЕНКО
+          АВТОСЕРВИС<br>Кириченко
         </p>
       </div>
       <div class="thirdcolumn">

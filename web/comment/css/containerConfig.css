@@ -12,6 +12,7 @@
     overflow: hidden;
     
 }
+
 .container2 {
     /* Used to keep the divs in a row.  you can use this for any size of divs */
     float: left;
@@ -20,6 +21,9 @@
     width: 100%;
     overflow: hidden;
     background-color: #d5e3f0;
+}
+.rowcontainer{
+    height: 180px;
 }
 .container3 {
     /* Used to keep the divs in a row.  you can use this for any size of divs */

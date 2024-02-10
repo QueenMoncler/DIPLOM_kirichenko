@@ -16,15 +16,7 @@ p{
      color:#454545;
      font-family: "Verdana ", sans-serif;
 }
-p.label{
-    margin-top: 15px;
-     /* padding-top: 2.5%; */
-     text-align: center;
-     font-size: xx-large;
-     font-weight: bold;
-     color:#454545;
-     font-family: "Verdana ", sans-serif;
-}
+
 p.price-list-label{
     margin-top: 15px;
     /* padding-top: 2.5%; */
@@ -43,19 +35,28 @@ p.price-list-label2{
     color:#454545; 
     font-family: "Verdana ", sans-serif;
 }
+p.label{
+    margin-top: 50px;
+     /* padding-top: 2.5%; */
+     text-align: center;
+     font-size: xx-large;
+     font-weight: bold;
+     color:#454545;
+     font-family: "Verdana ", sans-serif;
+}
 a.adres{
     display: block;
-	font-size: large;
+	font-size: x-large;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    margin-top: 6.5%;
+    margin-top: 50px;
     font-family: "Verdana ", sans-serif;
     color: #454545;
     
 }
-.testSvg{
-	width: 10%;
+.testSvg img{
+	width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;

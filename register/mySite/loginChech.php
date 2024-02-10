@@ -10,9 +10,10 @@ $pass = filter_var(trim($_POST['pass']),
     // $new_url_good = '/web/home/php/home.php';
     $new_url_negood = '/register/mySite/test.html';
 
+$passMd = md5($pass);
 $conn = new mysqli('localhost', 'root', '', 'kirichenkodiplomphp');
-$result = $conn->query("SELECT * FROM user WHERE login = '$login' AND password = '$pass'");
-$resultNAME = $conn->query("SELECT name FROM user WHERE login = '$login' AND password = '$pass'");
+$result = $conn->query("SELECT * FROM user WHERE login = '$login' AND password = '$passMd'");
+$resultNAME = $conn->query("SELECT name FROM user WHERE login = '$login' AND password = '$passMd'");
 
 if ($result == 1) {
     

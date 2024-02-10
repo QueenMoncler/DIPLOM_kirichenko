@@ -160,12 +160,12 @@ textarea {
 input, textarea {
     transition: all .2s ease-in-out;
 }
-input:hover, input:focus, textarea:hover, textarea:focus {
+/* input:hover, input:focus, textarea:hover, textarea:focus {
     box-shadow:
             0 0 0 2px hsl(var(--black)),
             0 0 0 3px hsl(var(--white));
     border: 2px solid transparent;
-}
+} */
 select {
     padding: .8em 1.2em;
     border: 1px solid hsl(var(--black));

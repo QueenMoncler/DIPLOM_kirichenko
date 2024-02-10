@@ -13,6 +13,9 @@
     margin-right: 10%;
     
 }
+.rowcontainer{
+    height: 180px;
+}
 .containerprice{
      /* Used to keep the divs in a row.  you can use this for any size of divs */
      float: left;
@@ -29,3 +32,4 @@
 .thirdcolumn{
     float: left; width: 33%; 
 }
+
